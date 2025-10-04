@@ -1,30 +1,97 @@
-### IntelliJ IDEA ###
+# =========================
+# Java / Build outputs
+# =========================
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-.kotlin
-
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+target/
+build/
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+classes/
+*.class
+*.war
+*.ear
+# 如果你不想把打包出的 JAR 也提交上去可放开下一行（谨慎，别误伤 wrapper）
+# *.jar
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# =========================
+# IDE / Project files
+# =========================
+# IntelliJ IDEA
+.idea/
+*.iml
 
-### VS Code ###
+# VS Code（如果也用）
 .vscode/
 
-### Mac OS ###
+# Eclipse（以防项目在别的 IDE 打开）
+.classpath
+.project
+.settings/
+.metadata/
+
+# =========================
+# Maven / Gradle
+# =========================
+# Gradle 缓存
+.gradle/
+# buildSrc 的 Gradle 缓存（如有）
+buildSrc/.gradle/
+
+# 保留 Gradle/Maven 包装器（需要提交）
+!gradlew
+!gradlew.bat
+!gradle/wrapper/gradle-wrapper.jar
+!mvnw
+!mvnw.cmd
+!.mvn/wrapper/maven-wrapper.jar
+
+# =========================
+# Logs / Temp / Dumps
+# =========================
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+*.hprof
+*.heapdump
+*.stackdump
+*.pid
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# =========================
+# OS 文件
+# =========================
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Env & Secrets（按需保留）
+# =========================
+.env
+.env.*
+*.key
+*.pem
+
+# =========================
+# Test / Coverage（按需）
+# =========================
+coverage/
+jacoco.exec
+*.lcov
+
+# =========================
+# Node/前端（如仓库里含前端）
+# =========================
+node_modules/
+dist/
+npm-debug.log*
+yarn*.log
+pnpm-*.yaml
+
+# =========================
+# Docker（按需）
+# =========================
+docker-data/
