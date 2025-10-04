@@ -1,7 +1,5 @@
 package com.xuan.structure;
 
-import java.util.Scanner;
-
 public class BreakDemo {
     public static void main(String[] args) {
         int n=1;
