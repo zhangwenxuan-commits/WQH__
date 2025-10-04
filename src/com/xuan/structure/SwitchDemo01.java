@@ -11,8 +11,10 @@ public class SwitchDemo01 {
            break;
            case 'B':
                System.out.println("良好");
+               break;
            case 'C':
                System.out.println("良");
+               break;
 
        }
     }
